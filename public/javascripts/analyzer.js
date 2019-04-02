@@ -140,7 +140,7 @@ debugger;
 }
 
 const record_type_scrip = (record, data_record) => {
-    record.script = " Schema.SObjectType." + data_record.SobjectType + ".getRecordTypeInfosByName().get('" + data_record.Name + "').getRecordTypeId();";
+    record.script = " Schema.SObjectType." + data_record.SobjectType + ".getRecordTypeInfosByName().get('" + data_record.Name + "').getRecordTypeId()";
 }
 
 const create_script = (object, data_record, variable_record_index) => {
